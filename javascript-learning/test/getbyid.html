@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>Chapter 2</title>
+</head>
+<body>
+    <div id="myDiv">Hello</div>
+    <div class="divClass">Second Line</div>
+    <div class="divClass">
+        <p class="pClass">This is in a paragraph.</p>
+    </div>
+    <div class="divClass">Last Line</div>
+    <div id="output"></div>
+    <script >
+        let theDiv = document.getElementById("myDiv");
+        theDiv.style.border = "3px solid black";
+        theDiv.style.color =  "blue";
+        alert("The content is " + theDiv.innerHTML);
+
+        let outputDiv = document.getElementById("output");
+        outputDiv.style.border = "3px solid black";
+        outputDiv.style.padding  = "3px";
+        let userAgent =  navigator.userAgent
+        outputDiv.innerHTML = "You are using " + userAgent;
+    </script>
+</body>
+</html>
